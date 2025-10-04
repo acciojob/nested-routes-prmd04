@@ -1,4 +1,5 @@
 import React from "react";
+import {Link,Outlet} from 'react-router-dom'
 
 const Layout = () => {
   return (
@@ -11,6 +12,7 @@ const Layout = () => {
           <Link to="/women">Women</Link>
         </li>
       </ul>
+      <Outlet/>
     </div>
   );
 };
